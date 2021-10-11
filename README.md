@@ -33,11 +33,11 @@ b) Hence, how much a team can score in an inning or 1st powerplay (provided data
 c) We can make a ML model to predict the final ranking of the teams in points-table by the end of current season (based on the stats and data about the results of the previous few matches)..... and many more...
 
 Let's know your ideas as well....
--#->
+-->
   
 ## Wanna Contribute? ✨
   
-It'd be great to join us and work toward some outstanding Data Science & AI/ML projects.  
+It'd be great to join us and work toward some outstanding UI Development, Image Processing, Data Engineering & AI/ML ideas with **dyPixa**.  
 Let's introduce a quick guide to being towards the contribution!!  
 
 ### Getting Started 🐢
@@ -46,20 +46,18 @@ Let's introduce a quick guide to being towards the contribution!!
  Have a glimpse below:  
 
  1. **Grab the Data:**  
- Explore the various datasets available in the [```Datasets```](https://github.com/thedatatribune/dyPixa/tree/dataset-defination) directory.  
- You can contribute by adding your own dataset to this branch, as well!!  
+ Explore the various datasets available in the [```Datasets```](https://github.com/thedatatribune/dyPixa/dataset) directory.  
+ You can contribute by adding your own dataset to this branch, as well!! It can be raw or processed or even the test phrases for expected inputs.    
 
  2. **Code Parallelly**  
  Find the dataset that interests you and begin with the codes to analyse the data.  
  You can share your code regardless of the language you use to code.  
 
- 3. **Add Visualizations**  
- You can do exploratory data analysis on the datasets and create nice graphs or other visualizations too that can bring good insights.  
- Visualization would make it more easy to understand the datasets.  
-
- 4. **Work Independently**  
+ 3. **Work Independently**  
  If you are confident enough in some other field say documentation/content-presentation or enhencement, you are most welcome.  
  You can also contribute with any other work, apart from those which are mentioned above. Just, make sure they are relavent to this project.
+
+<!--
 
 ### Folder Conventions 📂
 
