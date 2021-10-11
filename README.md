@@ -1,19 +1,20 @@
 # dyPixa
 A project to generate abstract images dynamically!
 
+
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+![All Contributors](https://img.shields.io/github/contributors/thedatatribune/dyPixa?style=for-the-badge)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->  
+  
+![Issues](https://img.shields.io/github/issues/thedatatribune/dyPixa?style=for-the-badge)
+![Pull Requests](https://img.shields.io/github/issues-pr/thedatatribune/dyPixa?style=for-the-badge)
+![Forks](https://img.shields.io/github/forks/thedatatribune/dyPixa?style=for-the-badge)
+![Stars](https://img.shields.io/github/stars/thedatatribune/dyPixa?style=for-the-badge)
+
+
+![dyPixa Header](./src/img/header.jpg)  
+  
 <!--
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -#->
-![All Contributors](https://img.shields.io/github/contributors/Team-thedatatribune/IPL-Analysis?style=for-the-badge)
-<!-- ALL-CONTRIBUTORS-BADGE:END -#->  
-  
-![Issues](https://img.shields.io/github/issues/Team-thedatatribune/IPL-Analysis?style=for-the-badge)
-![Pull Requests](https://img.shields.io/github/issues-pr/Team-thedatatribune/IPL-Analysis?style=for-the-badge)
-![Forks](https://img.shields.io/github/forks/Team-thedatatribune/IPL-Analysis?style=for-the-badge)
-![Stars](https://img.shields.io/github/stars/Team-thedatatribune/IPL-Analysis?style=for-the-badge)
-
-
-![IPL Header](./src/img/header.png)  
-  
 **Indian Premier League**   
 This project was opened initially to track and pridict for the IPL 2020. Now, we aim to take it forward for 2021 as well.  
 The Indian Premier League (IPL) is a professional **Twenty20** cricket league in India contested during March or **April** and April-May of every year by **eight teams** representing eight different cities or states in India. The league was founded by the Board of Control for Cricket in India (BCCI) in 2008.  
@@ -48,7 +49,7 @@ Let's introduce a quick guide to being towards the contribution!!
  Have a glimpse below:  
 
  1. **Grab the Data:**  
- Explore the various datasets available in the [```Datasets```](https://github.com/Team-thedatatribune/IPL-Analysis/tree/dataset-defination) directory.  
+ Explore the various datasets available in the [```Datasets```](https://github.com/thedatatribune/dyPixa/tree/dataset-defination) directory.  
  You can contribute by adding your own dataset to this branch, as well!!  
 
  2. **Code Parallelly**  
