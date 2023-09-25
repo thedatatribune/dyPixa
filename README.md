@@ -81,7 +81,7 @@ Being in an early phase of the development, the usage guide for _dyPixa_ is yet 
 
 ## Contributing
 
-Contributions to **dyPixa** are welcome! Whether you want to improve existing features, add new functionality, or report issues, please follow the contribution guidelines outlined in the project's [`CONTRIBUTING.md`](`CONTRIBUTING.md`) file.
+Contributions to **dyPixa** are welcome! Whether you want to improve existing features, add new functionality, or report issues, please follow the contribution guidelines outlined in the project's [`CONTRIBUTING.md`](CONTRIBUTING.md) file.
 
 ## License
 
