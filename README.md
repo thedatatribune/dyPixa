@@ -59,7 +59,7 @@ To get started with _dyPixa,_ follow these steps:
 > Depending on the project's requirements, you might need to download pre-trained models for sentiment analysis or color combination generation. Check the project documentation for instructions on acquiring these models.  
 
 3. Run/Enhance the Project:  
-> - Follow the project-specific instructions in the documentation _(to be updated)_ to use _dyPixa_ for text analysis, color combination generation, abstract image creation, and text overlay. Once you are inthe working directory, i.e., `./dyPixa`; you can also start enhancing the code. Being open-source, maintainers would :heart: to merge your contributions.  
+> - Follow the project-specific instructions in the documentation _(to be updated)_ to use _dyPixa_ for text analysis, color combination generation, abstract image creation, and text overlay. Once you are inthe working directory, i.e., `dyPixa`; you can also start enhancing the code. Being open-source, maintainers would :heart: to merge your contributions.  
 
 ## Usage
 
@@ -81,7 +81,7 @@ Being in an early phase of the development, the usage guide for _dyPixa_ is yet 
 
 ## Contributing
 
-Contributions to **dyPixa** are welcome! Whether you want to improve existing features, add new functionality, or report issues, please follow the contribution guidelines outlined in the project's [`CONTRIBUTING.md`](`./CONTRIBUTING.md`) file.
+Contributions to **dyPixa** are welcome! Whether you want to improve existing features, add new functionality, or report issues, please follow the contribution guidelines outlined in the project's [`CONTRIBUTING.md`](`CONTRIBUTING.md`) file.
 
 ## License
 
@@ -89,4 +89,4 @@ This project is licensed under the MIT License. Feel free to use, modify, and di
 
 ---
 
-**Note for contributors:** _This [`README.md`](./README.md) is a template and should be customized to reflect the specific details and requirements of your project. Provide clear and comprehensive instructions to help users get started and contribute to the project._  
+**Note for contributors:** _This [`README.md`](README.md) is a template and should be customized to reflect the specific details and requirements of your project. Provide clear and comprehensive instructions to help users get started and contribute to the project._  

@@ -25,7 +25,7 @@ Before you start contributing, please read and follow these guidelines.
 
 ## Code of Conduct
 
-Please note that we have a Code of Conduct [_(here)_](./CODE_OF_CONDUCT.md) in place to ensure a positive and inclusive environment for everyone. By participating in this project, you agree to abide by the Code of Conduct. Unacceptable behavior will not be tolerated.  
+Please note that we have a Code of Conduct [_(here)_](CODE_OF_CONDUCT.md) in place to ensure a positive and inclusive environment for everyone. By participating in this project, you agree to abide by the Code of Conduct. Unacceptable behavior will not be tolerated.  
 
 ## Types of Contributions
 
@@ -83,7 +83,7 @@ Here's how you can contribute to dyPixa:
      ```
 
 4. **Make Changes:**
-   - Implement your contribution or fix the issue you're working on. Ensure your code follows the project's coding guidelines mentioned in [Code of Conduct](./CODE_OF_CONDUCT.md).
+   - Implement your contribution or fix the issue you're working on. Ensure your code follows the project's coding guidelines mentioned in [Code of Conduct](CODE_OF_CONDUCT.md).
 
 5. **Test Your Changes:**
    - Test your changes thoroughly to ensure they work as intended.
