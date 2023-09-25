@@ -49,9 +49,6 @@ While major contributions are essential for advancing the project, contributors 
 Contributors can choose to make minor or major contributions based on their expertise, availability, and interest in the project. Both types of contributions are highly appreciated and contribute to the overall success of dyPixa.
 
 
-
-
-
 ## How to Contribute
 
 Here's how you can contribute to dyPixa:
