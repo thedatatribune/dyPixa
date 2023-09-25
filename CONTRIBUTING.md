@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 # Contributing to dyPixa
 
 Thank you for your interest in contributing to dyPixa! By contributing to this open-source project, you help make it better and support its growth. We appreciate your efforts and welcome contributions from the community.
@@ -15,7 +17,7 @@ Before you start contributing, please read and follow these guidelines.
 
 ## Code of Conduct
 
-Please note that we have a Code of Conduct [_(here)_](CODE_OF_CONDUCT.md) in place to ensure a positive and inclusive environment for everyone. By participating in this project, you agree to abide by the Code of Conduct. Unacceptable behavior will not be tolerated.  
+Please note that we have a Code of Conduct [_(here)_](https://github.com/thedatatribune/dyPixa/blob/main/CODE_OF_CONDUCT.md) in place to ensure a positive and inclusive environment for everyone. By participating in this project, you agree to abide by the Code of Conduct. Unacceptable behavior will not be tolerated.  
 
 ## Types of Contributions
 
