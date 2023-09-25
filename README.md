@@ -18,12 +18,12 @@ _Dynamically generating abstract images using Computer Vision, Machine Learning,
 
 ### Table of Contents  
 
-- [Introduction](#Introduction)
-- [Features](#Features)
-- [Getting Started](#Getting-Started)
-- [Usage](#Usage)
-- [Contributing](#Contributing)
-- [License](#License)
+- [Introduction](#introduction)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Introduction
 
