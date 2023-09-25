@@ -12,9 +12,9 @@ _Dynamically generating abstract images using Computer Vision, Machine Learning,
 ![Stars](https://img.shields.io/github/stars/thedatatribune/dyPixa?style=for-the-badge)
 
 
-![dyPixa Header](./src/img/header.jpg)  
+![dyPixa Header](assets/img/banner.png)  
 
-**dyPixa,** aka **Dynamic Pixels**, is an open-source project that aims to develop a tool combining the power of _image processing_ and _machine learning_ to create **abstract images based on text input** and _sentiment analysis._ With _dyPixa,_ you can generate stunning visuals by harnessing the emotions expressed in the text.  
+**dyPixa,** aka **Dynamic Pixels**, is an open-source project that aims to develop a tool combining the power of **computer vision,** **machine learning,** and **natural language processing** to create _abstract images based on text input_ and _sentiment analysis._ With _dyPixa,_ you can generate stunning visuals by harnessing the emotions expressed in the text.  
 
 ### Table of Contents  
 
@@ -27,7 +27,7 @@ _Dynamically generating abstract images using Computer Vision, Machine Learning,
 
 ## Introduction
 
-**dyPixa** is a project that enables you to analyze _Multilingual_ text, perform _sentiment analysis,_ and use the emotions expressed in the text to generate abstract images with carefully selected color combinations. It would leverage state-of-the-art _machine learning_ models and _computer vision_ techniques to achieve this. Additionally, _dyPixa_ allows you to overlay the input text onto the generated abstract image, creating visually striking compositions.  
+**dyPixa** is a project that enables you to analyze _Multilingual_ text, perform _sentiment analysis,_ and use the emotions expressed in the text to generate abstract images with carefully selected color combinations. It would leverage state-of-the-art _machine learning_ models and _image processing_ techniques to achieve this. Additionally, _dyPixa_ allows you to overlay the input text onto the generated abstract image, creating visually striking compositions.  
 
 ## Features
 
