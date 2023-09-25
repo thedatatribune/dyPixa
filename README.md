@@ -1,6 +1,6 @@
 # dyPixa
-A project to generate abstract images dynamically!
 
+_Dynamically generating abstract images using Computer Vision, Machine Learning, and Sentiment Analysis_  
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 ![All Contributors](https://img.shields.io/github/contributors/thedatatribune/dyPixa?style=for-the-badge)
@@ -13,144 +13,80 @@ A project to generate abstract images dynamically!
 
 
 ![dyPixa Header](./src/img/header.jpg)  
-  
-**dyPixa aka _Dynamic Pixels_**  
-This project is started in order to develop a machine learning model integrated with a WebApp or CLI to generate awesome abstract arts based on the phrase entered by the user. Yesssss! You heard it right... an image inspired from the words!  
-  
-In order to design a descent Instagram Post for quotes, we often have to work a lot on the image creation. The idea of this project is to let the author input the sentiments and based on the keywords used to express it, an abstract image could be generated where colors may represent the intensity of the key-ords.  
-  
-There can be multiple ways to interpret the idea and hence several machine learning models can be developed to generate the images!!  
+
+**dyPixa,** aka **Dynamic Pixels**, is an open-source project that aims to develop a tool combining the power of _image processing_ and _machine learning_ to create **abstract images based on text input** and _sentiment analysis._ With _dyPixa,_ you can generate stunning visuals by harnessing the emotions expressed in the text.  
+
+### Table of Contents  
+
+- [Introduction](#introduction)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Introduction
+
+**dyPixa** is a project that enables you to analyze _Multilingual_ text, perform _sentiment analysis,_ and use the emotions expressed in the text to generate abstract images with carefully selected color combinations. It would leverage state-of-the-art _machine learning_ models and _computer vision_ techniques to achieve this. Additionally, _dyPixa_ allows you to overlay the input text onto the generated abstract image, creating visually striking compositions.  
+
+## Features
+
+> * **Multilingual Text and Sentiment Analysis:** dyPixa can analyze Hindi text and determine its sentiment, whether it's positive, negative, or neutral.  
+>  
+> * **Color Combination Model:** Train a machine learning model using a dataset of images paired with text descriptions to learn the most suitable color combinations for different sentiments.  
+>  
+> * **Abstract Image Generation:** Generate abstract images based on the input text's sentiment, utilizing the color combinations learned by the model.  
+>  
+> * **Text Overlay:** Overlay the input text onto the generated abstract image, allowing you to create visually appealing compositions that convey the text's emotion.  
+
+## Getting Started
+
+To get started with _dyPixa,_ follow these steps:  
+
+1. Clone the Repository:  
+> 
+> ```sh
+> $ git clone https://github.com/thedatatribune/dyPixa.git  
+> $ cd dyPixa  
+> ```  
+
+2. Install Dependencies:  
+> - Install the required Python libraries by running:  
+>   ```sh
+>   $ pip install -r requirements.txt
+>   ```  
+> - Download Pre-trained Models _(applicable in future as the project grows):_  
+> Depending on the project's requirements, you might need to download pre-trained models for sentiment analysis or color combination generation. Check the project documentation for instructions on acquiring these models.  
+
+3. Run/Enhance the Project:  
+> - Follow the project-specific instructions in the documentation _(to be updated)_ to use _dyPixa_ for text analysis, color combination generation, abstract image creation, and text overlay. Once you are inthe working directory, i.e., `dyPixa`; you can also start enhancing the code. Being open-source, maintainers would :heart: to merge your contributions.  
+
+## Usage
+
+Being in an early phase of the development, the usage guide for _dyPixa_ is yet to be populated. However, with this tool, one would be able to do:  
+
+1. Text Analysis and Sentiment Analysis  
+<!-- - Use the provided functions to analyze Hindi text and determine its sentiment. -->
+
+2. Color Combination Generation  
+<!-- - Train or use pre-trained models to generate color combinations based on sentiment. -->
+
+3. Abstract Image Generation  
+<!-- - Utilize the color combinations to create abstract images representing the input text's emotion. -->
+
+4. Text Overlay  
+<!-- - Overlay the input text onto the generated abstract image using provided functions. -->
+
+<!-- For more detailed usage instructions, refer to the project documentation. -->
+
+## Contributing
+
+Contributions to **dyPixa** are welcome! Whether you want to improve existing features, add new functionality, or report issues, please follow the contribution guidelines outlined in the project's [`CONTRIBUTING.md`](CONTRIBUTING.md) file.
+
+## License
+
+This project is licensed under the MIT License. Feel free to use, modify, and distribute _dyPixa_ according to the terms of the license.  
 
 ---
 
-This project aims to collect the various data related to _Image &amp; Netural Language Processing_. The object is to finally develop an ML model that takes an english phrase and returns back an abstract image of squared resolution by utilizing the properties of the trained model. This whole functionality can be integrated with a WebApp, as well.  
-
-<!--
-## Scope of this repository
-Our data analysis can be carried out in order to acheive the following outcomes:
-a) How long (in terms of runs) a partnership between batsmen can go if provided boller is bolling currently
-b) Hence, how much a team can score in an inning or 1st powerplay (provided data of first over)
-c) We can make a ML model to predict the final ranking of the teams in points-table by the end of current season (based on the stats and data about the results of the previous few matches)..... and many more...
-
-Let's know your ideas as well....
--->
-  
-## Wanna Contribute? ✨
-  
-It'd be great to join us and work toward some outstanding UI Development, Image Processing, Data Engineering & AI/ML ideas with **dyPixa**.  
-Let's introduce a quick guide to being towards the contribution!!  
-
-### Getting Started 🐢
-
- Just going through a certain steps, you can easily begin with your work!  
- Have a glimpse below:  
-
- 1. **Grab the Data:**  
- Explore the various datasets available in the [```Datasets```](https://github.com/thedatatribune/dyPixa/dataset) directory.  
- You can contribute by adding your own dataset to this branch, as well!! It can be raw or processed or even the test phrases for expected inputs.    
-
- 2. **Code Parallelly**  
- Find the dataset that interests you and begin with the codes to analyse the data.  
- You can share your code regardless of the language you use to code.  
-
- 3. **Work Independently**  
- If you are confident enough in some other field say documentation/content-presentation or enhencement, you are most welcome.  
- You can also contribute with any other work, apart from those which are mentioned above. Just, make sure they are relavent to this project.
-
-<!--
-
-### Folder Conventions 📂
-
-This project has **two** branches:  
-
-> 1. **master** :  
->   _It's the default and the main branch of the project_
-> 2. **dataset-definations** :  
->   _This branch basically holds the datasets and their proper documentations_  
-
-  
-_Folder structure conventions_ for the **master** branch of this project:  
-
-```
-    .
-    .
-    ├── Codes                   # All available codes
-    │
-    ├── Visualizations          # All visuals or graphs etc..
-    │
-    ├── src                     # Formal documentations of repo
-    │   │
-    │   ├── img                 # Stores documentation images 
-    │   │
-    │   .
-    │   .
-    │   └── ...         
-    │
-    ├── Codes.md                # Formal info about codes & their usage
-    │
-    ├── Datasets.md             # Brief intro about available datasets 
-    │
-    ├── Visualizations.md       # Documentations for visualizations
-    │   
-    ├── Stats                   # Stats holding directory
-    │   │
-    │   ├── Stats2020.md        # Previous stats on IPL-2020 
-    │   │
-    │   ├── Stats2021.md        # Previous stats on IPL-2021 
-    │   .
-    │   .
-    │   └── ...     
-    │
-    │
-    ├── contributors.md         # All contributors' list
-    │
-    ├── README.md                  
-    │
-    └── ...
-```
-  
-_Folder structure conventions_ for the **dataset-defination** branch of this project:   
-  
-```
-    .
-    .
-    ├── Datasets                # All available datasets
-    │   │
-    │   ├── deliveries.csv  
-    │   │
-    │   ├── matches.csv  
-    │   │
-    │   ├── players.csv  
-    │   .
-    │   .
-    │   └── ...   
-    │
-    ├── Details                 # Datasets' detailed description
-    │   │
-    │   ├── deliveries.md  
-    │   │
-    │   ├── matches.md  
-    │   │
-    │   ├── players.md  
-    │   .
-    │   .
-    │   └── ...   
-    │
-    ├── README.md  
-    │
-    └── ...
-```  
-  
-### Contribution Guide 📚  
-
-We have got a range of contributors, since we've started with this peoject. In fact you can explore our [contributors' list](./contributors.md) to know about them!  
-If you too wish to be in our contributors' list, it'd be our pleasure 😃   
-It involves a sequence of easy and simple steps to be there! So, head towards our [contribution guide](./src/contributionGuide.md) right now to give your contribution!!  
-
--->
-
----  
-
-## License ⚖️
-
-This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE.md) file for details.
+**Note for contributors:** _This [`README.md`](README.md) is a template and should be customized to reflect the specific details and requirements of your project. Provide clear and comprehensive instructions to help users get started and contribute to the project._  
