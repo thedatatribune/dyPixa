@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 # Contributing to dyPixa
 
 Thank you for your interest in contributing to dyPixa! By contributing to this open-source project, you help make it better and support its growth. We appreciate your efforts and welcome contributions from the community.
