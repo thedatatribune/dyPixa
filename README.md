@@ -31,7 +31,7 @@ _Dynamically generating abstract images using Computer Vision, Machine Learning,
 
 ## Features
 
-> * **Multilingual Text and Sentiment Analysis:** dyPixa can analyze text written in different languages and determine its sentiment, whether it's positive, negative, or neutral.  
+> * **Multilingual Text and Sentiment Analysis:** dyPixa can analyze Hindi text and determine its sentiment, whether it's positive, negative, or neutral.  
 >  
 > * **Color Combination Model:** Train a machine learning model using a dataset of images paired with text descriptions to learn the most suitable color combinations for different sentiments.  
 >  
@@ -66,7 +66,7 @@ To get started with _dyPixa,_ follow these steps:
 Being in an early phase of the development, the usage guide for _dyPixa_ is yet to be populated. However, with this tool, one would be able to do:  
 
 1. Text Analysis and Sentiment Analysis  
-<!-- - Use the provided functions to analyze Multilingual text and determine its sentiment. -->
+<!-- - Use the provided functions to analyze Hindi text and determine its sentiment. -->
 
 2. Color Combination Generation  
 <!-- - Train or use pre-trained models to generate color combinations based on sentiment. -->
