@@ -29,7 +29,7 @@ declined, etc.
 
 If you discover any security issues or vulnerabilities within this project, please follow these steps to report it to us responsibly:
 
-1. **Privately Notify Us**: Please do not disclose the issue publicly. Instead, send an email to [your-email@example.com] with a detailed description of the vulnerability.
+1. **Privately Notify Us**: Please do not disclose the issue publicly. Instead, send an email to [1907prakash.ravi@gmail.com](mailto:1907prakash.ravi@gmail.com) with a detailed description of the vulnerability.
 
 2. **Provide Details**: Include a clear and concise description of the issue, the steps to reproduce it, and any relevant information or context.
 
@@ -61,4 +61,4 @@ Once we confirm and validate a security vulnerability, we will work on a fix. De
 
 We appreciate your assistance in keeping this project secure and safe for all users. Thank you for your contributions and cooperation in making this a responsible and secure development environment.
 
-[Contact Email: your-email@example.com]
+[Contact Email: 1907prakash.ravi@gmail.com]
