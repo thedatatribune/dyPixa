@@ -61,7 +61,7 @@ Here's how you can contribute to dyPixa:
 2. **Clone the Repository:**
    - Clone your forked repository to your local development environment:
      ```
-     $ git clone https://github.com/thedatatribune/dyPixa.git
+     $ git clone https://github.com/oboninja/dyPixa.git
      $ cd dyPixa
      ```
 
