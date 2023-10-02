@@ -1,0 +1,1 @@
+Stores the data related to the poems and sentiments.
