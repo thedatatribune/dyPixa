@@ -1,0 +1,1 @@
+Stores the data related to the colors, images, and thumbnails.
