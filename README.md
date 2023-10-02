@@ -89,4 +89,4 @@ This project is licensed under the MIT License. Feel free to use, modify, and di
 
 ---
 
-**Note for contributors:** _This [`README.md`](README.md) is a template and should be customized to reflect the specific details and requirements of your project. Provide clear and comprehensive instructions to help users get started and contribute to the project._  
+**Note for contributors:** _This [`README.md`](README.md) is supposed to be updated as per any new feature/changes introduced. Provide clear and comprehensive instructions to help users get be familiar._  
