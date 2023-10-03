@@ -1,4 +1,4 @@
-o# dyPixa
+# dyPixa
 
 _Dynamically generating abstract images using Computer Vision, Machine Learning, and Sentiment Analysis_  
 
