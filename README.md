@@ -1,10 +1,10 @@
-# dyPixa
+o# dyPixa
 
 _Dynamically generating abstract images using Computer Vision, Machine Learning, and Sentiment Analysis_  
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 ![All Contributors](https://img.shields.io/github/contributors/thedatatribune/dyPixa?style=for-the-badge) 
-[![Discord dyPixa](https://img.shields.io/discord/1156823984344678480?color=5865F2&logo=Discord&style=for-the-badge)](https://discord.gg/yVwKaX4H)
+[![Discord dyPixa](https://img.shields.io/discord/1156823984344678480?color=5865F2&logo=Discord&style=for-the-badge)](https://discord.gg/b9mVngKsJS)
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->  
   
