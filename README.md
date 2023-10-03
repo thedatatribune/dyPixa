@@ -43,15 +43,15 @@ _Dynamically generating abstract images using Computer Vision, Machine Learning,
 
 To get started with _dyPixa,_ follow these steps:  
 
-1. Clone the Repository:  
+1. [Fork](https://github.com/thedatatribune/dyPixa/fork) this repository and clone using following command:  
 > 
 > ```sh
-> $ git clone https://github.com/thedatatribune/dyPixa.git  
+> $ git clone https://github.com/<your-username>/dyPixa.git  
 > $ cd dyPixa  
 > ```  
 
 2. Install Dependencies:  
-> - Install the required Python libraries by running:  
+> - Install the required Python libraries by running _(presently, the `requirements.txt` is empty, however it'll be updated with growth of the project)_:  
 >   ```sh
 >   $ pip install -r requirements.txt
 >   ```  
