@@ -8,6 +8,7 @@ Here is a structured table containing information about online datasets:
 | Hugging Face           | Poems (Eng)                    | Full poems       | [poetry](https://www.kaggle.com)  |
 | Kaggle     | Poems (Hin)              | JSON (in unicode)          | [amarujala/kavya](https://www.kaggle.com/datasets/tusharsingh1999/hindi-poem-dataset/)    |
 | Kaggle      | Poem Classification (NLP/Eng)                  |  4 Genres : _Affection, Environment, Music, and Death_           | [Poem Classification](https://www.kaggle.com/datasets/ramjasmaurya/poem-classification-nlp/data?select=Poem_classification+-+train_data.csv)     |
+| Hugging Face      | Emotions (Eng)                  |  28 Sentiments           | [go_emotions](https://huggingface.co/datasets/go_emotions)     |
 
 ## Contributors
 
