@@ -53,7 +53,7 @@ To get started with _dyPixa,_ follow these steps:
 > ```  
 
 2. Install Dependencies:  
-> - Install the required Python libraries by running _(presently, the `requirements.txt` is empty, however it'll be updated with growth of the project)_:  
+> - Install the required Python libraries by running _(the `requirements.txt` is updated with growth of the project)_:  
 >   ```sh
 >   $ pip install -r requirements.txt
 >   ```  
