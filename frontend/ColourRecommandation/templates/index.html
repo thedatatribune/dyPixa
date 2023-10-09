@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Recommendation Portal 🌈</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: linear-gradient(45deg, #ff5733, #34ff45, #a232ff);
+        background-size: 200% 200%;
+        animation: gradientAnimation 10s infinite alternate;
+        font-family: Arial, sans-serif; /* Change the font-family */
+      }
+
+      h1 {
+        font-size: 2rem;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      form {
+        background: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+
+      label {
+        font-size: 1.2rem;
+        color: #333;
+      }
+
+      input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      input[type="submit"] {
+        background-color: #ff5733;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #a232ff;
+      }
+
+      #color-recommendations {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .color-box {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        line-height: 100px;
+        font-weight: bold;
+        color: white;
+      }
+
+      @keyframes gradientAnimation {
+        0% {
+          background-position: 0% 50%;
+        }
+        100% {
+          background-position: 100% 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Color Recommendation Portal 🌈</h1>
+    <form>
+      <label for="text">Enter Text:</label>
+      <input type="text" name="text" id="text" required />
+      <input type="submit" value="Get Color Recommendations" />
+    </form>
+    <div id="color-recommendations"></div>
+    <script>
+      const form = document.querySelector("form");
+      const colorRecommendationsDiv = document.getElementById(
+        "color-recommendations"
+      );
+
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const text = document.getElementById("text").value;
+
+        const response = await fetch("/recommend", {
+          method: "POST",
+          body: new URLSearchParams({ text }),
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
+        });
+
+        const data = await response.json();
+        const recommendedColors = data.colors;
+
+        // Display recommended colors
+        colorRecommendationsDiv.innerHTML = "<h2>Recommended Colors:</h2>";
+        recommendedColors.forEach((color) => {
+          const colorDiv = document.createElement("div");
+          colorDiv.style.backgroundColor = color;
+          colorDiv.textContent = color;
+          colorRecommendationsDiv.appendChild(colorDiv);
+        });
+      });
+    </script>
+  </body>
+</html>
