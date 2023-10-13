@@ -51,10 +51,12 @@ def extract_dominant_colors(image, num_colors=5):
 
     return hex_colors
 
-if __name__ == "__main__":
+#####   serving app
+def colorChecker(image_path=None, printCol=False, showImg=True):
     try:
-        # Ask user for the image URL or file path
-        input_source = input("Enter the image URL or file path: ")
+        if image_path is None:
+            # Ask user for the image URL or file path
+            input_source = input("Enter the image URL or file path: ")
 
         # Load the image from URL or file
         img = load_image(input_source)
@@ -65,15 +67,29 @@ if __name__ == "__main__":
 
         # Extract dominant colors
         dominant_colors = extract_dominant_colors(img)
-
+        col = []
+        
         # Display the dominant colors and their hex values
         for i, color in enumerate(dominant_colors, start=1):
-            print(f"Dominant Color {i}: {color}")
-
-        # Display the image
-        plt.imshow(img)
-        plt.axis('off')
-        plt.show()
+            col.append(color)
+            if printCol:
+                print(f"Dominant Color {i}: {color}")
         
+        if showImg:
+            # Display the image
+            plt.imshow(img)
+            plt.axis('off')
+            plt.show()
+
+        ## returning
+        return col
+
     except ValueError as e:
         print(str(e))
+        return False
+
+
+# ## HOW TO USE?
+# if __name__ == "__main__":
+#   # test run
+#   colorChecker()
