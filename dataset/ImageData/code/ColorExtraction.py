@@ -6,6 +6,7 @@ import requests
 from io import BytesIO
 import matplotlib.pyplot as plt
 
+
 def load_image(input_source):
     """
     Load an image from either a URL or a local file.
@@ -32,6 +33,7 @@ def load_image(input_source):
     except requests.exceptions.RequestException as err:
         raise ValueError(f"Something went wrong: {err}")
 
+
 def extract_dominant_colors(image, num_colors=5):
     # Convert the image from BGR to RGB (OpenCV uses BGR by default)
     img_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
@@ -51,8 +53,9 @@ def extract_dominant_colors(image, num_colors=5):
 
     return hex_colors
 
-#####   serving app
-def colorChecker(image_path=None, printCol=False, showImg=True):
+
+####   serving app
+def color_checker(image_path=None, printCol=False, showImg=True):
     try:
         if image_path is None:
             # Ask user for the image URL or file path
@@ -66,15 +69,15 @@ def colorChecker(image_path=None, printCol=False, showImg=True):
             raise ValueError("Could not open or find the image. Please check the URL or file path.")
 
         # Extract dominant colors
-        dominant_colors = extract_dominant_colors(img)
+        dominant_colors = extract_dominant_colors(img, 5)
         col = []
-        
+
         # Display the dominant colors and their hex values
         for i, color in enumerate(dominant_colors, start=1):
             col.append(color)
             if printCol:
                 print(f"Dominant Color {i}: {color}")
-        
+
         if showImg:
             # Display the image
             plt.imshow(img)
@@ -89,7 +92,8 @@ def colorChecker(image_path=None, printCol=False, showImg=True):
         return False
 
 
+
 # ## HOW TO USE?
 # if __name__ == "__main__":
 #   # test run
-#   colorChecker()
+#   # color_checker()
