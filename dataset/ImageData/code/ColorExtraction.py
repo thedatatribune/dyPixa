@@ -75,7 +75,8 @@ def color_checker(image_path=None, printCol=False, showImg=True):
         # Display the dominant colors and their hex values
         for i, color in enumerate(dominant_colors, start=1):
             col.append(color)
-            print(f"Dominant Color {i}: {color}")
+            if printCol:
+                print(f"Dominant Color {i}: {color}")
 
         if showImg:
             # Display the image
@@ -95,4 +96,4 @@ def color_checker(image_path=None, printCol=False, showImg=True):
 # ## HOW TO USE?
 # if __name__ == "__main__":
 #   # test run
-# color_checker()
+#   # color_checker()
