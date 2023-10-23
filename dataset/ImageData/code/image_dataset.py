@@ -99,7 +99,7 @@ for emotion in emotions:
 print("Downloaded images and extracted color hues for all emotions.")
 
 # Define the path where you want to save the CSV file
-csv_file_path = "../../../../emotion_dataset.csv"
+csv_file_path = "emotion_dataset.csv"
 
 # Write the dataset to a CSV file
 with open(csv_file_path, mode="w", newline="") as csv_file:
