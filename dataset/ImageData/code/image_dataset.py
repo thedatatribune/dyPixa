@@ -1,9 +1,102 @@
 import os
 import requests
-from ColorExtraction import color_checker  # Replace with your color extraction function
+import hashlib
+import json
 import csv
+from ColorExtraction import color_checker
 
-# Replace with your Unsplash API key
+
+def get_image(emotion, api_key, download_directory):
+    # Define the search query
+    query = f"{emotion} emotion"
+
+    # Define the API endpoint
+    endpoint = "https://api.unsplash.com/search/photos"
+
+    # Set up the request headers with your API key
+    headers = {
+        "Authorization": f"Client-ID {api_key}"
+    }
+
+    # Parameters for the search
+    params = {
+        "query": query,
+        "per_page": 10  # Number of images to fetch per emotion
+    }
+
+    # Send the request to the Unsplash API
+    response = requests.get(endpoint, headers=headers, params=params)
+
+    if response.status_code == 200:
+        data = response.json()
+        images = []
+        for i, image_info in enumerate(data["results"]):
+            image_url = image_info["urls"]["regular"]
+            image_hash = hashlib.md5(image_url.encode()).hexdigest()
+            response = requests.get(image_url)
+
+            if response.status_code == 200:
+                with open(f"{download_directory}/{emotion}_{i}.jpg", "wb") as file:
+                    file.write(response.content)
+                images.append({"image_url": image_url, "image_hash": image_hash})
+        return images
+    return []
+
+
+def make_csv(csv_dataset, file_path):
+    with open(file_path, mode="w", newline="") as csv_file:
+        fieldnames = ["emotion", "image_url", "image_hash"]
+        writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(csv_dataset)
+
+
+def make_json(json_dataset, file_path):
+    with open(file_path, "w") as json_file:
+        json.dump(json_dataset, json_file, indent=4)
+
+
+def create_emotion_dataset(api_key, emotions, download_directory):
+    json_dataset = []
+    csv_dataset = []
+
+    for emotion in emotions:
+        images = get_image(emotion, api_key, download_directory)
+
+        if images:
+            for image in images:
+                image_url = image["image_url"]
+                image_hash = image["image_hash"]
+
+                # Process the downloaded image
+                color_hues = color_checker(image_url, showImg=False)
+
+                # Append the data to the CSV dataset
+                csv_dataset.append({
+                    "emotion": emotion,
+                    "image_url": image_url,
+                    "image_hash": image_hash
+                })
+
+                # Add data to the JSON dataset
+                json_dataset.append({
+                    emotion: {
+                        image_hash: {
+                            "HEX": color_hues,
+                            "RGB": [tuple(int(color.lstrip('#')[i:i+2], 16) for i in (0, 2, 4)) for color in color_hues]
+                        }
+                    }
+                })
+
+        else:
+            print(f"Failed to download images for {emotion}")
+
+    make_csv(csv_dataset, "./data/emotion_dataset.csv")
+    make_json(json_dataset, "./data/emotion_hues.json")
+    print("Successfully completed")
+
+
+# Replace these with your actual values
 UNSPLASH_API_KEY = "TOKEN"  # insert your token
 
 # List of emotions
@@ -34,8 +127,8 @@ emotions = [
     "relief",
     "remorse",
     "sadness",
+    "neutral",
     "surprise",
-    "neutral"
 ]
 
 # Directory to save the downloaded images
@@ -45,70 +138,4 @@ download_directory = "emotion_images"
 if not os.path.exists(download_directory):
     os.makedirs(download_directory)
 
-# Initialize the dataset
-emotion_dataset = []
-
-# Fetch images for each emotion and process them
-for emotion in emotions:
-    # Define the search query
-    query = f"{emotion} emotion"
-
-    # Define the API endpoint
-    endpoint = "https://api.unsplash.com/search/photos"
-
-    # Set up the request headers with your API key
-    headers = {
-        "Authorization": f"Client-ID {UNSPLASH_API_KEY}"
-    }
-
-    # Parameters for the search
-    params = {
-        "query": query,
-        "per_page": 1  # Number of images to fetch per emotion
-    }
-
-    # Send the request to the Unsplash API
-    response = requests.get(endpoint, headers=headers, params=params)
-
-    if response.status_code == 200:
-        data = response.json()
-        for i, image_info in enumerate(data["results"]):
-            image_url = image_info["urls"]["regular"]
-            response = requests.get(image_url)
-            if response.status_code == 200:
-                with open(f"{download_directory}/{emotion}_{i}.jpg", "wb") as file:
-                    file.write(response.content)
-
-                # Process the downloaded image
-                image_path = f"{download_directory}/{emotion}_{i}.jpg"
-
-                # Call the color extraction function to get color hues
-                color_hues = color_checker(image_path, showImg=False)
-
-                # Append the data to the dataset
-                emotion_dataset.append({
-                    "emotion": emotion,
-                    "color_hues": color_hues,
-                    "image_url": image_url
-                })
-            else:
-                print(f"Failed to download image for {emotion} - Image {i}")
-    else:
-        print(f"Failed to fetch images for {emotion}")
-
-print("Downloaded images and extracted color hues for all emotions.")
-
-# Define the path where you want to save the CSV file
-csv_file_path = "emotion_dataset.csv"
-
-# Write the dataset to a CSV file
-with open(csv_file_path, mode="w", newline="") as csv_file:
-    fieldnames = ["emotion", "color_hues", "image_url"]
-    writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
-
-    writer.writeheader()
-    for entry in emotion_dataset:
-        writer.writerow(entry)
-
-print(f"Dataset saved as {csv_file_path}.")
-
+create_emotion_dataset(UNSPLASH_API_KEY, emotions, download_directory)
